@@ -5,32 +5,28 @@
     }
 
 header{
-    border-style: 5px solid black;
-    align-items: center;
-    position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+    background-image: url(/assets/images/together.jpg);
     }
     
 nav{
     font-size: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 5px;
-    border: 2px solid black;
+
     }
-nav div{
-        display:inline-block;
-    }
-nav .logo{
-        margin-left: 65%;
-    }
-a{
+nav a{
         padding: 5px 5px 0 5px;
-        text-decoration: none;
-        color: black;
-    }
+        color: aliceblue;
+
+}
 .title1{
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -42,24 +38,26 @@ h1, h2, .boton{
     color: aliceblue;
     text-align: center;
 }
-.Imagen1{
-    display: none;
-}
+
 .title2{
-    margin: 50px 0 0 25%;
-    padding: 0 5px 0 50px;
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 5px 0 0 0;
+    padding: 0 5px 0 0;
+    width: 100%;
+    height: 70vh;
     font-size: x-large;
     background-image: url(../images/image-3.jpg);
-    color:aliceblue;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
-.Imagen2{
-    display: none;
+
+h3{
+    background-color: aliceblue;
+
 }
+
 .titulo, 
 .subtitulo{
     width: 100%;
@@ -75,6 +73,7 @@ h1, h2, .boton{
     flex-wrap: nowrap;
     justify-content: center;
     justify-content: space-evenly;
+    background-color: black;
 }
 
 .primera, 
@@ -85,50 +84,45 @@ h1, h2, .boton{
     flex-direction: column-reverse;
     justify-content: space-between;
     justify-items: center ;
+    color: aliceblue;
 }
 
 .contact1{
-            width: 100vh;
-            margin-left: 25%;
+            margin-top: 20px;
+    width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             font-size: x-large;
-            background-image: url(../images/together.jpg);
+            background-image: url(../images/together-2.jpg);
             color:aliceblue;
         }
 
-.fotocontacto{
-    display:none;
-}
-
-.containerContacto{
-    margin-top: 50px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.container2{
-    border: 2px solid black;
-}
-.mail,
-.telefono{
+.contacto{
+    margin: 50px 0 0 0;
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/assets/images/dumbbells.jpg);
 }
 
-.mailytelefono{
-    text-decoration-line: underline;
-    text-decoration-style: solid;
+.textocontacto{
+    font-size: xx-large;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    color: aliceblue;
+}
+.mail{
+    color: aliceblue;
+    font-size: larger;
+    margin: 50px 0 50px 0;
+}
+a{
+    color: aliceblue;
 }
 
 .tabla1 {
-    margin: 50px;
+    background-image: url(/assets/images/dumbbells.jpg);
     display: flex;
     justify-content: center;
     min-height: 90vh;
@@ -145,8 +139,69 @@ font-size: x-large;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 100px 0 0 0;
+    padding: 150px 0 150px 0;
+    background-image: url(/assets/images/together-2.jpg);
+    color: aliceblue;
 }
 ul{
     list-style-type: disc;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+}
+
+.centro{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    background-image: url(/assets/images/gym-1.jpg);
+}
+
+.Formulario{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.imagenes6{
+    display:flex;
+    flex-direction: column;
+    margin: 5px 5px 5px 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+.img{
+padding: 5px 5px 5px 5px;
+}
+.legend{
+    text-align: center;
+}
+.Fieldset{
+    display: flex;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form{
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid black;
+    margin-top: 10px;
+}
+footer{
+    background-image: url(/assets/images/image.jpg);
 }
